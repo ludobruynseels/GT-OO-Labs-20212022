@@ -44,7 +44,7 @@ public class BarrelTest
 
     /**
      * check constructor with normal conditions
-     *
+     * */
     @Test
     public void test1()
     {
@@ -53,34 +53,34 @@ public class BarrelTest
         assertEquals(5.2, barrel1.getContent(), 0.1);
         assertEquals(20.0, barrel1.getCapacity(), 0.1);
     }
-*/
+
     /**
      * check constructor where content > capacity
-     *
+     */
     @Test
     public void test2()
     {
-        Barrel barrel1 = new Barrel("wine", 20.0, 25.2);
+        Barrel barrel1 = new Barrel("wine", 25.2, 20.0);
         assertEquals("wine", barrel1.getLiquidType());
         assertEquals(20.0, barrel1.getContent(), 0.1);
-        assertEquals(20.0, barrel1.getCapacity(), 0.1);
+        assertEquals(25.2, barrel1.getCapacity(), 0.1);
     }
-*/
+
     /**
      * check constructor with only capacity (content is set to zero in this case)
-     *
+     */
     @Test
     public void test3()
     {
         Barrel barrel1 = new Barrel("wine", 20.0);
         assertEquals("wine", barrel1.getLiquidType());
-        assertEquals(0.0, barrel1.getContent(), 0.1);
+        assertEquals(2.5, barrel1.getContent(), 0.1);
         assertEquals(20.0, barrel1.getCapacity(), 0.1);
     }
-*/    
+   
     /**
      * Check setter for liquid type
-     *
+     */
     @Test
     public void test4()
     {
@@ -89,10 +89,10 @@ public class BarrelTest
         barrel1.setLiquidType( "oil" );
         assertEquals("oil", barrel1.getLiquidType());
     }
-*/
+
     /**
      * check fill with normal conditions
-     *
+     
     @Test
     public void test5()
     {
