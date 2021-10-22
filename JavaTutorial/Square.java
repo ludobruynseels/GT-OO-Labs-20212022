@@ -13,7 +13,7 @@ public class Square {
     private int yPosition;
     private String color;
     private boolean isVisible;
-
+  
     /**
      * Create a new square at default position with default color.
      */

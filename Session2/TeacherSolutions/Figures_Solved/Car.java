@@ -17,7 +17,7 @@ public class Car
     public Car()
     {
         roof = new Circle();
-        frontWheel = new Circle();
+        frontWheel = new Circle("green", 60, -20, 34    );
         backWheel = new Circle();
         body = new Square();
         body2 = new Square();
@@ -26,13 +26,14 @@ public class Car
         
     public void drawCar()
     {
-        frontWheel.changeColor("red");
-        frontWheel.makeVisible();
+       frontWheel.makeVisible();
+        /* frontWheel.changeColor("red");
+        
         frontWheel.changeSize(34);
         frontWheel.moveDown();
         frontWheel.moveDown();
         frontWheel.moveLeft();
-        frontWheel.moveDown();
+        frontWheel.moveDown(); */
         
         backWheel.changeColor("red");
         backWheel.changeSize(34);

@@ -27,6 +27,18 @@ public class Circle
         color = "blue";
     }
 
+    public Circle(String myColor, int xpos, int ypos, int radius, boolean pVisible)
+    {
+    diameter = radius;
+    xPosition = xpos;
+    yPosition = ypos;
+    color  = myColor;
+    isVisible = pVisible;
+    }
+
+    public Circle(String myColor) {}
+    
+    
     /**
      * Make this circle visible. If it was already visible, do nothing.
      */
