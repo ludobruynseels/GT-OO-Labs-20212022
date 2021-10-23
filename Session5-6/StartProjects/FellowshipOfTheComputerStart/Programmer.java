@@ -27,12 +27,15 @@ public class Programmer
 
     public void brag()
     {
-        //WARNING!!! This method is currently unsafe. If we call this function without having a computer, we will get a nullpointerexception
-        if(myComputer.getRam()>4)
-        {
+        int i=0;
+        if (myComputer == null) {
+            System.out.println("I don't have a computer yet.");
+        }
+        else if (myComputer.getRam()>4) {
             System.out.println("I have a "+myComputer.getBrand()); 
         }
     }
+    
 
     public void buildComputer()
     {
@@ -82,6 +85,22 @@ public class Programmer
         }
     }
 
+        public void turnOffComputer()
+    {
+        if(myComputer != null)
+        {
+            if(myComputer.getPower() == true)
+            {
+                myComputer.pressPowerSwitch();
+            }
+            else
+            {
+                System.out.println("The computer was already turned off.");
+            }
+
+        }
+    }
+    
     public void setComputer(Computer computer)
     {
         myComputer = computer;   
