@@ -45,7 +45,7 @@ public class VoyagerTest
     /**
      * Method test01: create voyager object and check getters
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test01()
     {
@@ -53,38 +53,38 @@ public class VoyagerTest
         assertEquals("Felix", voyager1.getName());
         assertEquals(100, voyager1.getBudget(), 0.1);
     }
-*/
+
 
     /**
      * Method test02: create Voyager object and check if Hotel attribute is set to null;
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test02()
     {
         Voyager voyager1 = new Voyager("Felix", 100);
         assertEquals(null, voyager1.getHotel());
     }
-*/
+
 
     /**
      * Method test03: test constructor and basic getters of Hotel class
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
-    public void test03()
+    public void test03() 
     {
         Hotel hotel1 = new Hotel("Métropole", 50);
         assertEquals("Métropole", hotel1.getName());
         assertEquals(50, hotel1.getPrice(), 0.1);
         assertFalse(hotel1.getAcceptsCreditCards());
     }
-*/
+
 
     /**
      * Method test04: test whether Hotels can accept credit cards
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test04()
     {
@@ -92,14 +92,14 @@ public class VoyagerTest
         hotel1.setAcceptsCreditCards(true);
         assertTrue(hotel1.getAcceptsCreditCards());
     }
-*/
+
 
     /**
      * Method test05: check if hotel is correctly set if budget large enough 
      * (note: accepting credit cards or not doesn't matter in this case!)
      * also checks whether you can change hotel correctly
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test05()
     {
@@ -113,12 +113,12 @@ public class VoyagerTest
         voyager1.book(hotel2);
         assertEquals(80, voyager1.getHotel().getPrice(), 0.1);
     }
-*/
+
 
     /**
      * Method test06: check if hotel is refused if budget too small
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test06()
     {
@@ -127,12 +127,12 @@ public class VoyagerTest
         voyager1.book(hotel1);
         assertEquals(null, voyager1.getHotel());     
     }
-*/
+
 
     /**
      * Method test07: check if hotel is correctely set if budget too small but the hotel accepts credit cards
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test07()
     {
@@ -142,12 +142,12 @@ public class VoyagerTest
         voyager1.book(hotel1);
         assertEquals("Métropole", voyager1.getHotel().getName());     
     }
-*/
+
 
     /**
      * Method test08: Test if review of hotel is correctly processed (ignoring review if rating is < 0 or > 5)
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available  */
     @Test
     public void test08()
     {
@@ -159,12 +159,12 @@ public class VoyagerTest
         assertEquals("It was nice!", hotel1.getReview());
         assertEquals(5, hotel1.getRating());
     }
-*/
+
 
     /**
      * Method test09: Test if voyager can correctly review hotel if set
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test09()
     {
@@ -175,12 +175,12 @@ public class VoyagerTest
         assertEquals("Meh", hotel1.getReview());
         assertEquals(3, hotel1.getRating());
     }
-*/
+
 
     /**
      * Method test10: Test if reviewing is nullpointer safe
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test10()
     {
@@ -197,12 +197,12 @@ public class VoyagerTest
         assertEquals("Meh", hotel1.getReview());
         assertEquals(3, hotel1.getRating());
     }
-*/
+
     
     /**
      * Method test11: Test if reviewing is nullpointer safe
      *
-     * remove comment when all necessary code is available 
+     * remove comment when all necessary code is available */
     @Test
     public void test11()
     {
@@ -211,7 +211,7 @@ public class VoyagerTest
         assertEquals("Anna", voyager1.getHotel().getName());
         assertEquals(5, voyager1.getHotel().getPrice(), 0.1);
     }
-*/
+
 }
 
 
