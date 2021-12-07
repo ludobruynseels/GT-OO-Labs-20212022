@@ -38,7 +38,7 @@ public class ArrayListExerciseTest
     public void tearDown()
     {
     }
-/*
+
     @Test
     public void testConstructor()
     {
@@ -68,6 +68,6 @@ public class ArrayListExerciseTest
         arrayListExercise.addUniqueFriend("Corneel");
         assertEquals(4, arrayListExercise.getNrOfFriends());
     }
-    */
+    
 }
 

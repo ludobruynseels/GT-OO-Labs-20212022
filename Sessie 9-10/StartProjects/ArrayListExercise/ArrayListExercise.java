@@ -1,4 +1,4 @@
-import...; // complete the import statement
+import java.util.ArrayList;
 
 /**
  * Write a description of class ArrayListExercise here.
@@ -9,7 +9,7 @@ import...; // complete the import statement
 public class ArrayListExercise
 {
     // instance variable myFriends, should be an ArrayList that can contain String objects
-    private ......... myFriends;
+    private ArrayList<String> myFriends = new ArrayList<String>();
 
     /**
      * Constructor for objects of class ArrayListExercise
@@ -30,8 +30,9 @@ public class ArrayListExercise
      */
     public void addFriends(String friend1, String friend2, String friend3)
     {
-        // put your code here
-
+        myFriends.add(friend1);
+        myFriends.add(friend2);
+        myFriends.add(friend3);
     }
 
     /**
@@ -40,7 +41,10 @@ public class ArrayListExercise
 
     public void printFriends() 
     {
-        // put your code here
+        for (String f : myFriends) 
+        {
+            System.out.println(f);
+        }
 
     }
 
@@ -48,7 +52,9 @@ public class ArrayListExercise
      * Getter for myFriends
      */
 
-    // write your method here
+    public ArrayList<String> getMyFriends() {
+        return myFriends;
+    }
     
     
     /**
@@ -57,7 +63,8 @@ public class ArrayListExercise
 
     public int getNrOfFriends()
     {
-        // put your code here   
+        // put your code here  
+        return myFriends.size();
     }
     
     
@@ -65,8 +72,9 @@ public class ArrayListExercise
      * Method to add an unique friend to myFriends
      */
     
-    public ... addUniqueFriend(...) 
+    public void addUniqueFriend(String newFriend) 
     {
-      // put your code here   
-    }
+      if (!myFriends.contains(newFriend))
+          myFriends.add(newFriend);
+    } 
 }
