@@ -1,0 +1,9 @@
+memberNr;firstName;lastName;emailAddress;startYear;startMonth;clubName;
+r001;Dries;Mertens;dries@napoli.it;2011;2;The red Devils;
+r002;Romelu;Lukaku;bueno@ferrero.com;2010;8;The red Devils;
+r003;Kevin;De Bruyne;thekid@kids.kid;2010;8;The red Devils;
+r004;Anthony;Vandenborre;tony@reddevils.be;2004;4;The red Devils;
+r005;Thibaut;Courtois;numberone@reddevils.be;2011;11;The red Devils;
+r006;Eden;Hazard;eden@hazard.com;2004;2;The red Devils;
+r007;Stef;Desmet;stef.desmet@kuleuven.be;1999;9;Groep T Students;
+r008;Jeff;Nobody;jeff@nobody.be;2080;11;From outer space;
