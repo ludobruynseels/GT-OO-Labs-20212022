@@ -1,5 +1,3 @@
-
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,7 +24,7 @@ public class AnimalShelterTest
     
     /**
      * Test Animal class
-     *  
+     */
     @Test
     public void test01()
     {
@@ -36,11 +34,11 @@ public class AnimalShelterTest
         assertEquals(6, a.getAge());
         assertEquals("AdelineTheAnaspeptic", a.getName());
     }
-    */
+    
     
     /**
      * Test AnimalShelter class basic functionality
-     *  
+     */  
     @Test
     public void test02()
     {
@@ -49,11 +47,11 @@ public class AnimalShelterTest
         aS.addAnimal(a);
         assertEquals(1, aS.numberOfAnimals());
     }
-    */
+    
     
     /**
      * Test Cat class
-     *  
+     */  
     @Test
     public void test03()
     {
@@ -67,11 +65,11 @@ public class AnimalShelterTest
         aS.addAnimal(c);
         assertEquals(1, aS.numberOfAnimals());
     }
-    */
+    
     
     /**
      * Test Dog class
-     *  
+     */  
     @Test
     public void test04()
     {
@@ -84,11 +82,11 @@ public class AnimalShelterTest
         aS.addAnimal(d);
         assertEquals(1, aS.numberOfAnimals());
     }
-    */
+    
     
     /**
      * Test looking up Animal by name
-     *  
+     */  
     @Test
     public void test05()
     {
@@ -103,11 +101,11 @@ public class AnimalShelterTest
         assertEquals(a2, aS.getAnimalByName("HelmutTheHound"));
         assertNull(aS.getAnimalByName("ShellyTheStarfish"));
     }
-    */
+    
     
     /**
      * Test makeAnimal method in AnimalShelter
-     *  
+     */  
     @Test
     public void test06()
     {
@@ -128,11 +126,11 @@ public class AnimalShelterTest
         assertEquals(3, aS.numberOfAnimals());
         assertEquals(a2, aS.getAnimalByName("HelmutTheHound"));
     }
-    */
+    
     
     /**
      * Test reading from file
-     *  
+     */
     @Test
     public void test07()
     {
@@ -147,8 +145,5 @@ public class AnimalShelterTest
         AnimalShelter aS2 = new AnimalShelter();
         aS2.readAnimalsFromFile("nonexistingfile");
         assertEquals(0, aS2.numberOfAnimals());
-    }
-    */
- 
-    
+    } 
 }
