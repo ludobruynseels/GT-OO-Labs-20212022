@@ -1,0 +1,12 @@
+cat
+GeorgeTheGlorious
+10
+dog
+SashaTheSluggish
+5
+cat
+MariaTheMagnificent
+8
+turtle
+DaisyTheDashing
+50
