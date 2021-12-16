@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>20</y>
+      <w>430</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Camping
+--
+-name: String
+-address: String
+--
++Camping(String campName, String campAddress)
++//needed setters and getters
++addPlace(Place newAcc): void
++getNrOfPlaces(): int
++getListFree(int startDay, int endDay): ArrayList&lt;Place&gt;
++removeAllWithCodeStart(String start): void
++getPopularyList(): ArrayList&lt;Place&gt;
++importReservations(String fileName): int
++tryReservation(int startDay, int endDay): int
++findPlace(String code): Place
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>30</y>
+      <w>370</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Place
+--
+-code: String
+-maxNrPersons: int
+-reservation: boolean[]
+--
++Place(String AccCode, int maxCapacity)
++//needed setters and getters
+-checkPeriod(int startDay, int endDay): boolean
++isFree(int startDay, int endDay): boolean
++makeReservation(int startDay, int endDay): void
++cancelReservation(int startDay, int endDay): void
++getNrOfDaysOccupied(): int
++calculatePrice(int start, int end): int
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>100</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;
+m2=*
+places</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+</diagram>

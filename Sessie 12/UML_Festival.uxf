@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>220</y>
+      <w>320</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>
+Festival
+
+--
+-tickets: ArrayList&lt;Ticket&gt;
+-acts: int[]
+--
++Festival()
++addTicket(Ticket t): void
++findMostPopularAct(): int
++findBirthdayBoys(String date): String
++importFromFile(String fileName): void
++updateAttendanceNumbers(): void
+
++getTickets(): Arraylist&lt;Ticket&gt;
++getActs(): int[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>80</y>
+      <w>290</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>
+Ticket
+
+--
+-ownerName: String
+-nationalNumber: String
+-acts: ArrayList&lt;Integer&gt;
+-price: float
+-isComplete: boolean
+-isCancelled: boolean
+--
++Ticket(String name, String natNumber)
++addAct(int actNumber, float price)
++cancel(): float
+
++getOwner(): String
++setOwner(String newOwner): void
++getNatNumber(): String
++setNatNumber(String newNatNumber): void
++getActs(): ArrayList&lt;Integer&gt;
++getPrice(): float
++getIsComplete(): boolean
++setIsComplete(boolean newStatus): void
++getIsCancelled(): boolean
++setIsCancelled(boolean newStatus): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>360</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1000</x>
+      <y>460</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>560</y>
+      <w>290</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>
+VIPTicket
+
+--
+
+--
++VIPTicket(String name, String natNumber)
++refund(): float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>730</x>
+      <y>350</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>sells                      *
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
