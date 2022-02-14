@@ -1,4 +1,5 @@
 #BlueJ package file
+<<<<<<< HEAD
 dependency1.from=BarrelTest
 dependency1.to=Barrel
 dependency1.type=UsesDependency
@@ -17,6 +18,23 @@ package.editor.y=204
 package.frame.height=1048
 package.frame.width=1080
 package.numDependencies=1
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+objectbench.height=185
+objectbench.width=1898
+package.divider.horizontal=0.6
+package.divider.vertical=0.7974683544303798
+package.editor.height=749
+package.editor.width=1776
+package.editor.x=0
+package.editor.y=99
+package.frame.height=1048
+package.frame.width=1938
+package.numDependencies=0
+>>>>>>> Session5-6
 package.numTargets=2
 package.showExtends=true
 package.showUses=true
@@ -39,5 +57,10 @@ target2.name=Barrel
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=120
+<<<<<<< HEAD
 target2.x=187
 target2.y=279
+=======
+target2.x=10
+target2.y=90
+>>>>>>> Session5-6
